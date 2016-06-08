@@ -3,8 +3,14 @@
 #include <time.h>
 #include<stdio.h>
 #include<math.h>
-
 #include "TabelaHash.h"
+
+/*
+ *Grupo 4
+ * Daniel Villaça
+ * Thiago Albuquerque
+ * Gabriel Teixeira
+ */
 
 using namespace std;
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */

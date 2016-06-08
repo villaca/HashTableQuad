@@ -2,6 +2,15 @@
 #define HASHItem_H
 
 #include <string>
+
+/*
+ *Grupo 4
+ * Daniel Villaça
+ * Thiago Albuquerque
+ * Gabriel Teixeira
+ */
+
+
 using namespace std;
 using std::string;
 

@@ -4,6 +4,13 @@
 #include <iostream>
 #include "HashItem.h"
 
+/*
+ *Grupo 4
+ * Daniel Villaça
+ * Thiago Albuquerque
+ * Gabriel Teixeira
+ */
+
 //const int TAMANHO = 7;
 
 class TabelaHash {

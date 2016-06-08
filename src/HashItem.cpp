@@ -1,5 +1,12 @@
 #include "HashItem.h"
 
+/*
+ *Grupo 4
+ * Daniel Villaça
+ * Thiago Albuquerque
+ * Gabriel Teixeira
+ */
+
 
       HashItem::HashItem(int chave, string info) {
             this->chave = chave;

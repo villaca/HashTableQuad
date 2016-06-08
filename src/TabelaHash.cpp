@@ -1,5 +1,12 @@
 #include "TabelaHash.h"
 
+/*
+ *Grupo 4
+ * Daniel Villaça
+ * Thiago Albuquerque
+ * Gabriel Teixeira
+ */
+
 using namespace std;
 
    /*TabelaHash::TabelaHash() {
