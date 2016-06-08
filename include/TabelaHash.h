@@ -2,6 +2,7 @@
 #define TabelaHash_H
 
 #include <iostream>
+#include <cstdlib>
 #include "HashItem.h"
 
 /*

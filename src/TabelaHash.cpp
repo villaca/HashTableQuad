@@ -16,12 +16,21 @@ using namespace std;
             tabela[i] = NULL;
     };*/
 
-    TabelaHash::TabelaHash(int tamanho = 7) {
-        cout << tamanho << endl;
-        TAMANHO = tamanho;
-        tabela = new HashItem*[tamanho];
-        for (int i = 0; i < tamanho; i++)
-            tabela[i] = NULL;
+    TabelaHash::TabelaHash(int tamanho) {
+        if(tamanho > 0 && (tamanho & (tamanho - 1)) ){
+            cout << "A tabela deve ter tamanho potencia de 2" << endl;
+            exit(1);
+        }
+        else if(tamanho <= 0){
+            cout << "A tabela deve ter tamanho potencia de 2" << endl;
+            exit(1);
+        }
+        else{
+            TAMANHO = tamanho;
+            tabela = new HashItem*[tamanho];
+            for (int i = 0; i < tamanho; i++)
+                tabela[i] = NULL;
+        }
     }
 
     int TabelaHash::f_hash(int itemChave, int tentativa){
