@@ -18,7 +18,13 @@ using namespace std;
     }
 
     int TabelaHash::f_hash(int itemChave, int tentativa){
-        return (itemChave + tentativa*tentativa) % TAMANHO;
+        if(tentativa == 0){
+            return (itemChave + tentativa*tentativa) % TAMANHO;
+        }
+        else{
+            return (f_hash(itemChave, tentativa - 1) + tentativa)% TAMANHO;
+        }
+
     }
 
     int TabelaHash::busca(int chave){
@@ -50,7 +56,7 @@ using namespace std;
 
         cout << "\n Tentativa " << tentativa << " de chave " << chave << " endereco: " << hash << "\n";  // somente para visaulizar
 
-        while (tabela[hash] != NULL && tabela[hash]->getChave() != chave && tentativa <= TAMANHO){
+        while( (tabela[hash] != NULL) && (tabela[hash]->getChave() != chave) && (tentativa <= TAMANHO)){
             hash = f_hash(chave,tentativa);
             tentativa++;
 
